@@ -61,6 +61,67 @@ document.writeln(elemMinore);
 // Creare un array di oggetti di squadre di calcio.
 // Ogni squadra avrà diverse proprietà: nome, punti fatti, falli subiti.
 // Nome sarà l’unica proprietà da compilare, le altre saranno tutte settate a 0.
+
+const squadre = [
+    {
+        nome : "Viareggio",
+        punti : 0,
+        "falli subiti" : 0
+    },
+    {
+        nome : "Cus Pisa",
+        punti : 0,
+        "falli subiti" : 0
+    },
+    {
+        nome : "Boca Juniores",
+        punti : 0,
+        "falli subiti" : 0
+    },
+    {
+        nome : "Lazio",
+        punti : 0,
+        "falli subiti" : 0
+    },
+    {
+        nome : "TikiTaka",
+        punti : 0,
+        "falli subiti" : 0
+    },
+    {
+        nome : "Lazio",
+        punti : 0,
+        "falli subiti" : 0
+    },
+    {
+        nome : "Bitonto",
+        punti : 0,
+        "falli subiti" : 0
+    }
+]
 // Generare numeri random al posto degli 0 nelle proprietà “punti” fatti e “falli subiti”.
 // Infine, creiamo un nuovo array i cui elementi contengono solo nomi e falli subiti e stampiamo tutto in console.
 
+//da completare
+for (let i = 0; i < squadre.length; i++) {
+    let thisPunti = squadre[i].punti;
+    let thisFalli = squadre[i]['falli subiti'];
+    console.log(squadre[i]);
+    
+    console.log(thisPunti);
+    console.log(thisFalli);
+    thisPunti = Number.parseInt(Math.random() * 40);
+    thisFalli = Number.parseInt(Math.random() * 20);
+    console.log("Punti " + thisPunti);
+    console.log("Falli " + thisFalli);
+
+    console.log("squadre " + squadre[i]);
+    
+    
+    
+
+
+    
+    
+}
+console.log(squadre);
