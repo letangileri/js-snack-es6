@@ -46,12 +46,17 @@ console.log(elemMinore);
 for (let i = 1; i < bici.length; i++) {
     const element = bici[i];
     if(element['peso'] < elemMinore){
+        biciPesoMinore = element.nome;
         elemMinore = element['peso'];
+
         console.log(elemMinore);        
     }
 
 }
 document.writeln(elemMinore);
+
+document.writeln(biciPesoMinore);
+
 
 // 10 7 5 2 3
 
