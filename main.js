@@ -41,6 +41,7 @@ const bici = [
 //memorizzo il peso del primo oggetto
 let elemMinore = bici[0]['peso'];
 console.log(elemMinore);
+let biciPesoMinore = "";
 
 //il for parte da 1 perchè il valore del peso del primo oggetto è memorizzato in elemMinore
 for (let i = 1; i < bici.length; i++) {
