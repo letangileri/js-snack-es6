@@ -39,21 +39,22 @@ const bici = [
 ]
 
 //memorizzo il peso del primo oggetto
-let biciMinore = bici[0];
-console.log(biciMinore);
+let elemMinore = bici[0];
 
 //il for parte da 1 perchè il valore del peso del primo oggetto è memorizzato in elemMinore
 for (let i = 1; i < bici.length; i++) {
     const element = bici[i];
-    if(element['peso'] < biciMinore.peso){
-        biciMinore = element.nome;
-        // biciMinore = element['peso'];
+    console.log("element" + element);
+    
+    if(element.peso < elemMinore.peso){
+        // biciPesoMinore = element.nome;
+        elemMinore = element;
 
-        console.log(biciMinore);        
+        console.log(elemMinore);        
     }
 
 }
-document.writeln(biciMinore);
+document.writeln(elemMinore.nome);
 
 
 
